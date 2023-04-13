@@ -1,0 +1,23 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "For this assignment, we will be learning about Test Drivin Development (TDD). When writing Javascript in larger applications, sometimes introducing new features and code can create unintended side effects. Writing tests for your code can help you write code that doesn't have bugs and free from unintentional side effects.",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukechapUVU/Unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukechapUVU/Unit-testing/issues"
+  },
+  "homepage": "https://github.com/lukechapUVU/Unit-testing#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}

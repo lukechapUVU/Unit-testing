@@ -106,8 +106,9 @@ function sumArray(numbers) {
     return total;
 }
 
-const numbersArray = [1, 2, 3, 4, 5];
-const sum = 15;
-if(sumArray(numbersArray) !== 15) {
-    throw new Error('Array sum does not match')
-}
+module.exports = fizzbuzz
+module.exports = reverseString
+module.exports = uppercaseString
+module.exports = removeVowels
+module.exports = validateKey
+module.exports = sumArray
