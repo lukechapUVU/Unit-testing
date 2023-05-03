@@ -58,18 +58,8 @@ function reverseString(str) {
     return str.split("").reverse().join("");
 }
 
-const reversedStr = "dlroW olleH"
-if(reverseString('Hello World') !== reversedStr) {
-    throw new Error('Could not reverse string') 
-}
-
 function uppercaseString(str) {
     return str.toUpperCase();
-}
-
-const allCapsStr = 'THIS IS SO COOL!'
-if(uppercaseString('this is so cool!') !== allCapsStr) {
-    throw new Error('Could not uppercase string')
 }
 
 function removeVowels(str) {
@@ -85,19 +75,6 @@ function validateKey(obj, key) {
     return Object.keys(obj).includes(key);
 }
 
-const myObj = {
-    name: "John",
-    age: 25
-};
-const correctKey = "age";
-const incorrectKey = "height";
-if(!validateKey(myObj, correctKey)) {
-    throw new Error('Correct key was marked incorrect')
-}
-if(validateKey(myObj, incorrectKey)) {
-    throw new Error('Incorrect key was marked correct')
-}
-
 function sumArray(numbers) {
     let total = 0;
     for (let i = 0; i < numbers.length; i++) {
@@ -106,9 +83,11 @@ function sumArray(numbers) {
     return total;
 }
 
-module.exports = fizzbuzz
-module.exports = reverseString
-module.exports = uppercaseString
-module.exports = removeVowels
-module.exports = validateKey
-module.exports = sumArray
+module.exports = {
+    fizzbuzz,
+    reverseString,
+    uppercaseString,
+    removeVowels,
+    validateKey,
+    sumArray
+  };
